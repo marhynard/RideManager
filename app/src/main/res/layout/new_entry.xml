@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textViewDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/distance"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewDistance"
+        android:ems="10"
+        android:inputType="numberDecimal|none" />
+
+    <TextView
+        android:id="@+id/textViewCurTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextDistance"
+        android:text="@string/time"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewCurTime"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextTime"
+        android:text="@string/average"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewAverage"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextAverage"
+        android:text="@string/maximum"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextMaximum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewMax"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextMaximum"
+        android:text="@string/date"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDate"
+        android:layout_centerHorizontal="true"
+        android:text="@string/plus" />
+
+    <TextView
+        android:id="@+id/textViewSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonDate"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewDate"
+        android:layout_toLeftOf="@+id/buttonDate"
+        android:text="@string/date"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBoxTrainer"
+        android:layout_marginBottom="77dp"
+        android:layout_toLeftOf="@+id/buttonDate"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonBack"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/buttonBack"
+        android:layout_toRightOf="@+id/buttonDate"
+        android:text="@string/save" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTrainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewSelectedDate"
+        android:text="@string/trainer" />
+
+</RelativeLayout>

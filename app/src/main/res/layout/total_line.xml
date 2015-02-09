@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/distance_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/distance_label" />
+
+    <TextView
+        android:id="@+id/distance_total"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/distance_label" />
+
+    <TextView
+        android:id="@+id/time_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/distance_total"
+        android:text="@string/time_label" />
+
+    <TextView
+        android:id="@+id/time_total"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/time_label" />
+
+
+</RelativeLayout>

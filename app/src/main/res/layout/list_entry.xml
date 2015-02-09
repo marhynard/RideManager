@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+        <TextView
+        android:id="@+id/month_entry"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+        android:id="@+id/day_entry"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/month_entry" />
+
+    <TextView
+        android:id="@+id/year_entry"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/day_entry" />
+
+    <TextView
+        android:id="@+id/dis_entry"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="27dp"        
+        android:layout_toRightOf="@+id/year_entry" />
+
+    <TextView
+        android:id="@+id/time_entry"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dis_entry" />
+
+    <TextView
+        android:id="@+id/ave_entry"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"        
+        android:layout_toRightOf="@+id/time_entry" />
+
+    <TextView
+        android:id="@+id/max_entry"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="86dp"
+        android:layout_toRightOf="@+id/ave_entry" />
+
+</RelativeLayout>

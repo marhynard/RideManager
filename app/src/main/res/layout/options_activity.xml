@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewCurLatitude"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:text="Sync with Database"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/dbSyncButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sync with Database" />
+    
+	<Button
+        android:id="@+id/csvButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export DB Contents to CSV" />
+	    
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email DB Contents" />
+
+</LinearLayout>

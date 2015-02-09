@@ -1,0 +1,45 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="@drawable/backyard">
+
+        <include
+            android:id="@+id/list_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/list_header" >
+        </include>
+
+        <ListView
+            android:id="@+id/loglist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/list_header">
+        </ListView>
+
+        <include
+            android:id="@+id/bottom_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            layout="@layout/bottom_menu" >
+        </include>
+
+        <include
+            android:id="@+id/total_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/loglist"
+            android:layout_marginTop="24dp"
+            layout="@layout/total_line" />
+
+    </RelativeLayout>
